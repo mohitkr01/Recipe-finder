@@ -1,0 +1,56 @@
+@import "../../../styles.scss";
+
+.login-form {
+  background-color: #232c37;
+  padding: 5px;
+  height: 420px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 3px;
+  @include g-shadow;
+  color: #bdbdbd;
+  margin-top: -10px;
+}
+
+.login-form__remind-me {
+  color: #bdbdbd
+}
+
+.loader-layout {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form-margin {
+  margin-bottom: 16px;
+}
+
+.login-form-button {
+  width: 190px;
+}
+
+.login-form__input {
+  max-width: 190px;
+  margin: auto;
+}
+
+.login-form__link {
+  font-size: .9em;
+  padding-bottom: 12px;
+}
+
+.login-form__logo {
+  height: 100px;
+  width: 100px;
+  margin: auto;
+}

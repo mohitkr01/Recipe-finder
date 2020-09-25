@@ -1,0 +1,88 @@
+<section id="ingredients-p">
+  <nz-carousel nzAutoPlay>
+    <div nz-carousel-content *ngFor="let index of array">
+      <div class="ingredients-p__carousel_1" *ngIf="index === 1"></div>
+      <div class="ingredients-p__carousel_2" *ngIf="index === 2"></div>
+      <div class="ingredients-p__carousel_3" *ngIf="index === 3"></div>
+    </div>
+  </nz-carousel>
+  <div nz-row nzJustify="flex-start" class="ingredients-p__wrapper" [nzGutter]="[16, 16]">
+    <div nz-col class="ingredients-p__item" [nzXXl]="4" [nzXl]="6" [nzLg]="8" [nzMd]="8" [nzSm]="12" [nzXs]="24">
+      <app-ingredient-card (getIngredientByCategory)="getIngredientByCategory($event)"
+        (selectedItems)="selectedItems($event)" description="Légumes feuilles, légumes tiges, légumes fleurs..."
+        img="vegetables" title="Légumes" [items]="loadedItems['Légumes']">
+      </app-ingredient-card>
+    </div>
+    <div nz-col class="ingredients-p__item" [nzXXl]="4" [nzXl]="6" [nzLg]="8" [nzMd]="8" [nzSm]="12" [nzXs]="24">
+      <app-ingredient-card (getIngredientByCategory)="getIngredientByCategory($event)"
+        (selectedItems)="selectedItems($event)" description="Fruits à noyau, fruits à pépin, agrumes..." img="fruits"
+        title="Fruits" [items]="loadedItems['Fruits']">
+      </app-ingredient-card>
+    </div>
+    <div nz-col class="ingredients-p__item" [nzXXl]="4" [nzXl]="6" [nzLg]="8" [nzMd]="8" [nzSm]="12" [nzXs]="24">
+      <app-ingredient-card (getIngredientByCategory)="getIngredientByCategory($event)"
+        (selectedItems)="selectedItems($event)" description="Poissons blancs, poissons bleus..." img="fishs"
+        title="Poissons" [items]="loadedItems['Poissons']">
+      </app-ingredient-card>
+    </div>
+    <div nz-col class="ingredients-p__item" [nzXXl]="4" [nzXl]="6" [nzLg]="8" [nzMd]="8" [nzSm]="12" [nzXs]="24">
+      <app-ingredient-card (getIngredientByCategory)="getIngredientByCategory($event)"
+        (selectedItems)="selectedItems($event)" description="Viandes blanches, viandes rouges..." img="meat"
+        title="Viandes" [items]="loadedItems['Viandes']">
+      </app-ingredient-card>
+    </div>
+    <div nz-col class="ingredients-p__item" [nzXXl]="4" [nzXl]="6" [nzLg]="8" [nzMd]="8" [nzSm]="12" [nzXs]="24">
+      <app-ingredient-card (getIngredientByCategory)="getIngredientByCategory($event)"
+        (selectedItems)="selectedItems($event)" description="Fromages, yaourts, lait, crème fraîche..." img="dairy"
+        title="Produits laitiers" [items]="loadedItems['Produits laitiers']">
+      </app-ingredient-card>
+    </div>
+    <div nz-col class="ingredients-p__item" [nzXXl]="4" [nzXl]="6" [nzLg]="8" [nzMd]="8" [nzSm]="12" [nzXs]="24">
+      <app-ingredient-card (getIngredientByCategory)="getIngredientByCategory($event)"
+        (selectedItems)="selectedItems($event)" description="Moutarde, mayonnaise, vinaigre, harissa..." img="sauces"
+        title="Vinaigres & sauces" [items]="loadedItems['Vinaigres & sauces']"></app-ingredient-card>
+    </div>
+    <div nz-col class="ingredients-p__item" [nzXXl]="4" [nzXl]="6" [nzLg]="8" [nzMd]="8" [nzSm]="12" [nzXs]="24">
+      <app-ingredient-card (getIngredientByCategory)="getIngredientByCategory($event)"
+        (selectedItems)="selectedItems($event)" description="Lentilles, pois chiche, pomme de terre..." img="starchy"
+        title="Féculents" [items]="loadedItems['Féculents']">
+      </app-ingredient-card>
+    </div>
+    <div nz-col class="ingredients-p__item" [nzXXl]="4" [nzXl]="6" [nzLg]="8" [nzMd]="8" [nzSm]="12" [nzXs]="24">
+      <app-ingredient-card (getIngredientByCategory)="getIngredientByCategory($event)"
+        (selectedItems)="selectedItems($event)" description="Piment, cumin, thym, menthe, canelle..." img="spices"
+        title="Épices & aromatiques" [items]="loadedItems['Épices & aromatiques']">
+      </app-ingredient-card>
+    </div>
+    <div nz-col class="ingredients-p__item" [nzXXl]="4" [nzXl]="6" [nzLg]="8" [nzMd]="8" [nzSm]="12" [nzXs]="24">
+      <app-ingredient-card (getIngredientByCategory)="getIngredientByCategory($event)"
+        (selectedItems)="selectedItems($event)" description="Farine de blé, d'orge, smoule, couscous..." img="flours"
+        title="Farines & semoule" [items]="loadedItems['Farines & semoule']">
+      </app-ingredient-card>
+    </div>
+    <div nz-col class="ingredients-p__item" [nzXXl]="4" [nzXl]="6" [nzLg]="8" [nzMd]="8" [nzSm]="12" [nzXs]="24">
+      <app-ingredient-card (getIngredientByCategory)="getIngredientByCategory($event)"
+        (selectedItems)="selectedItems($event)" description="Huile de tournesol, huile d'olives, beurre demi-sel..."
+        img="fat" title="Matières grasses" [items]="loadedItems['Matières grasses']">
+      </app-ingredient-card>
+    </div>
+    <div nz-col class="ingredients-p__item" [nzXXl]="4" [nzXl]="6" [nzLg]="8" [nzMd]="8" [nzSm]="12" [nzXs]="24">
+      <app-ingredient-card (getIngredientByCategory)="getIngredientByCategory($event)"
+        (selectedItems)="selectedItems($event)" description="Oeuf de poule, de canard, de caille, d'autruche..."
+        img="eggs" title="Oeufs" [items]="loadedItems['Oeufs']">
+      </app-ingredient-card>
+    </div>
+    <div nz-col class="ingredients-p__item" [nzXXl]="4" [nzXl]="6" [nzLg]="8" [nzMd]="8" [nzSm]="12" [nzXs]="24">
+      <app-ingredient-card (getIngredientByCategory)="getIngredientByCategory($event)"
+        (selectedItems)="selectedItems($event)" description="Arômes, levures, chocolat, sirops, miel..." img="pastry"
+        title="Pâtisserie" [items]="loadedItems['Pâtisserie']">
+      </app-ingredient-card>
+    </div>
+  </div>
+  <button [disabled]="optionsDisabled" class="ingredients-p__search-btn" nz-button nzType="primary">
+    <div nzTooltipTitle="Rechercher" (click)="searchRecipes()" nzTooltipPlacement="left" nz-button nz-tooltip>
+      <i nz-icon nzType="search"></i>
+    </div>
+  </button>
+  <app-add-recipe-form [userIngredients]="userIngredients" [disabled]="optionsDisabled"></app-add-recipe-form>
+</section>

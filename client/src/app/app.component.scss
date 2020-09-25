@@ -1,0 +1,19 @@
+@import '../styles.scss';
+
+.loader-layout {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba($color: #ffffff, $alpha: 1);
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  i {
+    font-size: 4em;
+    color: $primary-color;
+  }
+}

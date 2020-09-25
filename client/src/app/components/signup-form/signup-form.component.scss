@@ -1,0 +1,33 @@
+@import "../../../styles.scss";
+
+.signup-form__steps-content {
+  margin-top: 16px;
+  border-radius: 6px;
+  min-height: 110px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.signup-form__steps-action {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup-form__btn {
+  margin-right: 8px;
+}
+
+.sign__pwd-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.signup-form__item {
+  width: 240px;
+  margin: 10px 20px;
+}

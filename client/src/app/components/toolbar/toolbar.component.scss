@@ -1,0 +1,60 @@
+@import "../../../styles.scss";
+
+.toolbar {
+  background-color: $tertiary-color;
+  height: 64px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 22;
+  visibility: visible;
+}
+
+.toolbar__logo {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+
+  a {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    max-width: 64px;
+
+    img {
+      height: 50px;
+      width: 50px;
+    }
+  }
+}
+
+.toolbar__btn {
+  position: absolute;
+  right: 10px;
+  top: 7px;
+  color: #fff;
+  bottom: 18px;
+  box-shadow: none;
+  border-radius: 50%;
+  background-color: $tertiary-color;
+  border-color: $tertiary-color;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    background-color: #3e3535;
+    border-color: #3e3535;
+  }
+}
+
+
+.toolbar__avatar {
+  text-transform: uppercase;
+  color: $secondary-color;
+  background-color: #fde3cf;
+}
