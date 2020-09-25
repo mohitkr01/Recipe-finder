@@ -1,6 +1,6 @@
 ## Project
 
-▶️ [Live demo](https://recipe-finder-seven.vercel.app/ 'recipe finder')<br />
+▶️ [Live demo](https://lcoakhost:3000/ 'recipe finder')<br />
 Recipe finder 👨🏻‍🍳
 
 Find recipes from Ingredients you already have.
